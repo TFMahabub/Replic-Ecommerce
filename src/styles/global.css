@@ -25,7 +25,11 @@ body {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
 .headerHeight {
-  @apply min-h-[calc(100vh-4rem)];
+  @apply h-[calc(100vh-4rem)];
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
 }
 .flex-center {
   @apply flex items-center justify-center;
@@ -36,10 +40,16 @@ body {
 .flex-justify {
   @apply flex justify-center;
 }
+.box-area {
+  @apply p-2 border border-gray bg-white;
+}
 
 /* spesific-tag-class */
 .navbar-search {
   @apply hidden lg:block lg:h-9 lg:w-72 px-4 outline-none focus:outline-none ring-0 placeholder:text-textColor;
+}
+.dashbord-menu-item {
+  @apply block hover:bg-gray/10 py-3 px-6 text-base;
 }
 
 a {
