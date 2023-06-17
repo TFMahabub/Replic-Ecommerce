@@ -2,9 +2,9 @@
 const Footer = () => {
     return (
         <section
-            className='container'
+            className='container flex-center border-t border-gray py-common'
         >
-            <p>this is footer</p>
+            <p>&copy; copy right2023</p>
         </section>
     );
 };

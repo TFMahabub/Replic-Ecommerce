@@ -3,10 +3,11 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      primary: '#0ca659',
-      secondary: '',
+      primary: '#149777',
+      secondary: '#FFC800',
+      textColor: '#707676',
       white: '#fff',
-      gray:'#c1c1c1'
+      gray:'#707676'
     },
     extend: {
       spacing: {

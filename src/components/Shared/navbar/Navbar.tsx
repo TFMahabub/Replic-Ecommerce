@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import { RootState } from "../../../app/store";
 import { setHamburgerMenu } from "../../../feauters/navbar/navbarSlice";
 import AllMenus from './AllMenus';
+import SearchSection from './SearchSection';
 
 const Navbar = () => {
     const { hamburgerMenu } = useSelector((state: RootState) => state.navbar)
     const dispatch = useDispatch()
-    console.log(import.meta.env.VITE_APP_COMPANY_NAME);
-
 
     const user = false;
     return (
@@ -21,11 +20,12 @@ const Navbar = () => {
                 <div className='flex items-center gap-2 md:gap-4'>
                     <Link to={"/"}>
                         <p
-                            className='text-2xl font-semibold text-primary'
+                            className='text-2xl font-medium text-white'
                         >
                             {import.meta.env.VITE_APP_COMPANY_NAME}
                         </p>
                     </Link>
+                    <SearchSection />
                 </div>
                 <div className='flex items-center gap-common'>
                     {/* -----------common-menus----------- */}

@@ -6,12 +6,12 @@ const MainLayout = () => {
     return (
         <section>
             <nav
-                className="h-full py-4 lg:py-0 lg:h-navbarHeight flex-item bg-white border-b border-gray"
+                className="h-full py-4 lg:py-0 lg:h-navbarHeight flex-item bg-primary border-b-2 border-secondary"
             >
                 <Navbar />
             </nav>
             <main
-                className=''
+                className='min-h-screen'
             >
                 <Outlet />
             </main>
