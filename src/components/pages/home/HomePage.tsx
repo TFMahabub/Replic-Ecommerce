@@ -5,7 +5,7 @@ const HomePage = () => {
     return (
         <>
             <header
-                className="bg-white container headerHeight flex-center"
+                className="bg-white headerHeight flex-center"
             >
                 <Banner />
             </header>

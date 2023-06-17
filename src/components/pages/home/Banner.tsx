@@ -3,7 +3,7 @@ import PrimaryButton from "../../../utils/ReUseCom/PrimaryButton";
 const Banner = () => {
     return (
         <div
-            className="text-center flex flex-col items-center gap-common"
+            className="container text-center flex flex-col items-center gap-common"
         >
             <h2
                 className="text-3xl font-semibold text-gray"
