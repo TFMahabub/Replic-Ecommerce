@@ -2,7 +2,19 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      primary: '#0ca659',
+      secondary: '',
+      white: '#fff',
+    },
+    extend: {
+      spacing: {
+        common: '16px'
+      },
+      transitionDuration: {
+        'common': '200ms',
+      }
+    },
   },
   plugins: [],
 }
