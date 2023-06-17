@@ -6,7 +6,6 @@ const RootSidebar = () => {
             <NavLink
                 to={'/dashbord/admin'}
                 className='dashbord-menu-item'
-                activeClassName="text-primary"
             >Admin
             </NavLink>
             <Link
