@@ -1,14 +1,13 @@
 import { AiOutlineNotification } from 'react-icons/ai';
 import { RiBookmarkLine, RiLogoutBoxRLine, RiNotification3Line, RiUser3Line } from 'react-icons/ri';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
-import { RootState } from '../../../app/store';
 import { setProfileMenu } from '../../../feauters/navbar/navbarSlice';
 import TextNavMenu from '../../../utils/ReUseCom/TextNavMenu';
 import UserInfoMenu from './UserInfoMenu';
 
 const ProfileMenus = () => {
-    const { hamburgerMenu } = useSelector((state: RootState) => state.navbar)
+    // const { hamburgerMenu } = useSelector((state: RootState) => state.navbar)
     const dispatch = useDispatch()
     return (
         <>
@@ -18,7 +17,7 @@ const ProfileMenus = () => {
             </div>
             {/* ------------down-menu------------ */}
             <Link
-                to={'/my_profile/profile'}
+                to={'/'}
                 onClick={() => dispatch(setProfileMenu())}
                 className='navbar-profile-menu-item'
             >
@@ -26,7 +25,7 @@ const ProfileMenus = () => {
                 <TextNavMenu>Profile</TextNavMenu>
             </Link>
             <Link
-                to={'/my_profile/notification'}
+                to={'/'}
                 onClick={() => dispatch(setProfileMenu())}
                 className='navbar-profile-menu-item'
             >
@@ -34,7 +33,7 @@ const ProfileMenus = () => {
                 <TextNavMenu>Notification</TextNavMenu>
             </Link>
             <Link
-                to={'/my_profile/bookmark'}
+                to={'/'}
                 onClick={() => dispatch(setProfileMenu())}
                 className='navbar-profile-menu-item'
             >
@@ -42,7 +41,7 @@ const ProfileMenus = () => {
                 <TextNavMenu>Bookmark</TextNavMenu>
             </Link>
             <Link
-                to={'/my_profile/announcement'}
+                to={'/'}
                 onClick={() => dispatch(setProfileMenu())}
                 className='navbar-profile-menu-item'
             >
