@@ -6,7 +6,7 @@ const MainLayout = () => {
     return (
         <section>
             <nav
-                className="h-10 "
+                className="h-full py-4 lg:py-0 lg:h-16 flex-item bg-white"
             >
                 <Navbar />
             </nav>
