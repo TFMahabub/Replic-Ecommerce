@@ -1,35 +1,39 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const RootSidebar = () => {
     return (
         <>
-            <NavLink
-                to={'/dashbord/admin'}
-                className='dashbord-menu-item'
-            >Admin
-            </NavLink>
-            <Link
-                to={'/dashbord/customers'}
-            >
-                <li
-                    className='dashbord-menu-item'
-
-                >Customers</li>
-            </Link>
-            <Link
-                to={'/dashbord/products'}
-            >
-                <li
-                    className='dashbord-menu-item'
-                >Products</li>
-            </Link>
-            <Link
-                to={'/dashbord/order-list'}
-            >
-                <li
-                    className='dashbord-menu-item'
-                >Order List</li>
-            </Link>
+            <li>
+                <NavLink
+                    to={'/dashbord/admin'}
+                    className={({ isActive }) => (isActive ? "dashbord-menu-item font-medium bg-primary/10" : "dashbord-menu-item")}
+                >Admin
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to={'/dashbord/customers'}
+                    className={({ isActive }) => (isActive ? "dashbord-menu-item font-medium bg-primary/10" : "dashbord-menu-item")}
+                >
+                    Customers
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to={'/dashbord/products'}
+                    className={({ isActive }) => (isActive ? "dashbord-menu-item font-medium bg-primary/10" : "dashbord-menu-item")}
+                >
+                    Products
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to={'/dashbord/order-list'}
+                    className={({ isActive }) => (isActive ? "dashbord-menu-item font-medium bg-primary/10" : "dashbord-menu-item")}
+                >
+                    Order List
+                </NavLink>
+            </li>
         </>
     );
 };

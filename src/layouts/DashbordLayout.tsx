@@ -16,15 +16,23 @@ const DashbordLayout = () => {
                 <Navbar />
             </nav>
             <section
-                className='container mt-6 grid grid-cols-12 gap-sectionGap'
+                className='container mt-6 grid grid-cols-12 gap-6'
             >
                 <aside
-                    className='col-span-3 h-[calc(100vh-5.5rem)] border border-gray bg-white rounded-lg'
+                    id='sideBarLinks'
+                    className='col-span-3 h-[calc(100vh-5.5rem)] border border-gray/40 bg-white rounded-lg'
                 >
-                    <RootSidebar />
+                    <h4
+                        className='text-lg font-semibold text-primary text-center py-2 bg-primary/20'
+                    >{import.meta.env.VITE_APP_COMPANY_NAME}</h4>
+                    <ul
+                        className='mt-6 px-4'
+                    >
+                        <RootSidebar />
+                    </ul>
                 </aside>
                 <main
-                    className='col-span-9 px-2 pb-1 border border-gray bg-white rounded-lg h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
+                    className='col-span-9 px-2 pb-1 border border-gray/40 bg-white rounded-lg h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
                 >
                     <Outlet />
                 </main>
