@@ -12,6 +12,8 @@ export default {
     extend: {
       spacing: {
         common: '16px',
+        partGap: '25px',
+        sectionGap: '45px',
         navbarHeight: '4rem'
       },
       transitionDuration: {

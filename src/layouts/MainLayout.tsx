@@ -11,7 +11,7 @@ const MainLayout = () => {
                 <Navbar />
             </nav>
             <main
-                className='min-h-screen'
+                className='space-y-sectionGap'
             >
                 <Outlet />
             </main>

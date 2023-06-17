@@ -1,11 +1,20 @@
+import Banner from "./Banner";
+import ProductSection from "./ProductSection";
 
 const HomePage = () => {
     return (
-        <section>
-            <header>
-                this is homepage
+        <>
+            <header
+                className="bg-white container headerHeight flex-center"
+            >
+                <Banner />
             </header>
-        </section>
+            <section
+                className="container space-y-partGap"
+            >
+                <ProductSection />
+            </section>
+        </>
     );
 };
 

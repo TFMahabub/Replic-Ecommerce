@@ -24,6 +24,9 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
+.headerHeight {
+  @apply min-h-[calc(100vh-4rem)];
+}
 .flex-center {
   @apply flex items-center justify-center;
 }
