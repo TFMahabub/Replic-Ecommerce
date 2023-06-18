@@ -7,7 +7,9 @@ export default {
       secondary: '#FFC800',
       textColor: '#707676',
       white: '#fff',
-      gray:'#707676'
+      gray:'#707676',
+      lightGray: '#f1f1f1',
+      error: '#EA5252'
     },
     extend: {
       spacing: {

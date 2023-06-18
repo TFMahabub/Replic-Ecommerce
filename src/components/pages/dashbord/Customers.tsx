@@ -1,9 +1,12 @@
+import CustomersHeader from "./CustomersHeader";
+import CustomersTable from "./CustomersTable";
 
 const Customers = () => {
     return (
-        <div>
-            this is customer
-        </div>
+        <>
+            <CustomersHeader />
+            <CustomersTable />
+        </>
     );
 };
 

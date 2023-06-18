@@ -20,7 +20,7 @@ const DashbordLayout = () => {
             >
                 <aside
                     id='sideBarLinks'
-                    className='col-span-3 h-[calc(100vh-5.5rem)] border border-gray/40 bg-white rounded-lg'
+                    className='col-span-12 lg:col-span-3 h-[calc(100vh-5.5rem)] border border-gray/40 bg-white rounded-lg'
                 >
                     <h4
                         className='text-lg font-semibold text-primary text-center py-2 bg-primary/20'
@@ -32,7 +32,7 @@ const DashbordLayout = () => {
                     </ul>
                 </aside>
                 <main
-                    className='col-span-9 box-area h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
+                    className='col-span-12 lg:col-span-9 px-4 border border-gray/40 bg-white rounded-lg h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
                 >
                     <Outlet />
                 </main>
