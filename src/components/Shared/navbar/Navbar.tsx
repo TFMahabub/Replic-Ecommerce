@@ -3,15 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 import { RootState } from "../../../app/store";
 import { setHamburgerMenu } from "../../../feauters/navbar/navbarSlice";
-import TextNavMenu from '../../../utils/ReUseCom/TextNavMenu';
-import BigScreenMenus from "./BigScreenMenus";
-import SmallScreenMenus from './SmallScreenMenus';
+import AllMenus from './AllMenus';
+import SearchSection from './SearchSection';
 
 const Navbar = () => {
     const { hamburgerMenu } = useSelector((state: RootState) => state.navbar)
     const dispatch = useDispatch()
 
-    const user = true;
+    const user = false;
     return (
 
         <div
@@ -21,9 +20,12 @@ const Navbar = () => {
                 <div className='flex items-center gap-2 md:gap-4'>
                     <Link to={"/"}>
                         <p
-                            className='text-2xl font-semibold text-primary'
-                        >Replic Ecommerce</p>
+                            className='text-2xl font-medium text-white'
+                        >
+                            {import.meta.env.VITE_APP_COMPANY_NAME}
+                        </p>
                     </Link>
+                    <SearchSection />
                 </div>
                 <div className='flex items-center gap-common'>
                     {/* -----------common-menus----------- */}
@@ -38,39 +40,20 @@ const Navbar = () => {
                             <RiCloseFill
                                 className="text-3xl" />}
                     </div>
-                    <div className='flex-item gap-common'>
-                        <Link
-                            to={'/'}
-                        >
-                            <TextNavMenu>
-                                Home
-                            </TextNavMenu>
-                        </Link>
-                        <Link
-                            to={'/login'}
-                        >
-                            <TextNavMenu>
-                                Log in
-                            </TextNavMenu>
-                        </Link>
-                        <Link
-                            to={'/register'}
-                        >
-                            <TextNavMenu>
-                                Create Account
-                            </TextNavMenu>
-                        </Link>
-                    </div>
                     {/* -----------common-menus----------- */}
-                    <BigScreenMenus
-                        user={user}
-                    />
+                    <div
+                        className='hidden lg:flex lg:gap-common'
+                    >
+                        <AllMenus
+                            user={user}
+                        />
+                    </div>
                 </div>
             </div>
             <div
-                className={`transform transition-all duration-300 ease-linear ${hamburgerMenu ? "flex flex-col items-center gap-common lg:hidden pb-common-1" : "hidden h-0"}`}
+                className={`transform transition-all duration-300 ease-linear ${hamburgerMenu ? "mt-common flex flex-col items-center gap-1 lg:hidden pb-common-1" : "hidden h-0"}`}
             >
-                <SmallScreenMenus
+                <AllMenus
                     user={user}
                 />
             </div>

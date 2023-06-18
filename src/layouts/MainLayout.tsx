@@ -6,11 +6,13 @@ const MainLayout = () => {
     return (
         <section>
             <nav
-                className="h-full py-4 lg:py-0 lg:h-16 flex-item bg-white"
+                className="h-full py-4 lg:py-0 lg:h-navbarHeight flex-item bg-primary border-b-2 border-secondary"
             >
                 <Navbar />
             </nav>
-            <main>
+            <main
+                className='space-y-sectionGap'
+            >
                 <Outlet />
             </main>
             <footer>

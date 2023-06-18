@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -24,6 +24,13 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
+.headerHeight {
+  @apply h-[calc(100vh-4rem)];
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
 .flex-center {
   @apply flex items-center justify-center;
 }
@@ -32,6 +39,21 @@ body {
 }
 .flex-justify {
   @apply flex justify-center;
+}
+.box-area {
+  @apply p-4 border border-gray/40 bg-white rounded-lg;
+}
+
+/* spesific-tag-class */
+.navbar-search {
+  @apply hidden lg:block lg:h-9 lg:w-72 px-4 outline-none focus:outline-none ring-0 placeholder:text-textColor;
+}
+.dashbord-menu-item {
+  @apply block rounded-lg hover:bg-primary/10 px-4 py-2 text-base text-primary;
+}
+
+.sideBarLinks a:active {
+  text: red;
 }
 
 a {
