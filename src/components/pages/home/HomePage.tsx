@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import FaqSection from "./FaqSection";
 import ProductSection from "./ProductSection";
 
 const HomePage = () => {
@@ -13,6 +14,11 @@ const HomePage = () => {
                 className="container space-y-partGap"
             >
                 <ProductSection />
+            </section>
+            <section
+                className="bg-white space-y-partGap"
+            >
+                <FaqSection />
             </section>
         </>
     );

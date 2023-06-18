@@ -1,9 +1,12 @@
+import ProductsHeader from "./ProductsHeader";
+import ProductsTable from "./ProductsTable";
 
 const Products = () => {
     return (
-        <div>
-            this is products
-        </div>
+        <>
+            <ProductsHeader />
+            <ProductsTable />
+        </>
     );
 };
 

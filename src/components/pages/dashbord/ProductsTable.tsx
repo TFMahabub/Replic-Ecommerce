@@ -1,7 +1,6 @@
 import { RiDeleteBinLine, RiEditBoxLine } from "react-icons/ri";
-import CompleteCondition from "./CompleteCondition";
 
-const OrderListTable = () => {
+const ProductsTable = () => {
     return (
         <>
             <table className="w-full whitespace-nowrap text-gray">
@@ -15,13 +14,13 @@ const OrderListTable = () => {
                             {/* serial */}
                             Serial
                         </th>
-                        <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-12">
-                            {/* Location */}
-                            Create Date/Time
+                        <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-4">
+                            {/* serial */}
+                            Name
                         </th>
                         <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-12">
-                            {/* Email */}
-                            Order Condition
+                            {/* Location */}
+                            Posted Date/Time
                         </th>
                         <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-20">
                             {/* Last Activity */}
@@ -53,12 +52,22 @@ const OrderListTable = () => {
                                     </span>
                                 </div>
                             </td>
-                            <td className="pl-12 text-sm font-normal">
-                                <span className="">18-04-2023 10:02 PM</span>
+                            <td className="pl-4">
+                                <div className="flex gap-2 items-center">
+                                    {/* <ChromeIcon /> */}
+                                    <div
+                                        className="h-7 w-8 bg-primary text-whtie rounded-md"
+                                    >
+                                        <img src="" alt="" />
+                                        img
+                                    </div>
+                                    <span className=" text-sm font-normal">
+                                        Salt 200ml
+                                    </span>
+                                </div>
                             </td>
                             <td className="pl-12 text-sm font-normal">
-                                {/* <PendingCondition /> */}
-                                <CompleteCondition />
+                                <span className="">18-04-2023 10:02 PM</span>
                             </td>
                             <td className="pl-20 text-sm font-normal">
                                 <div
@@ -80,4 +89,4 @@ const OrderListTable = () => {
     );
 };
 
-export default OrderListTable;
+export default ProductsTable;
