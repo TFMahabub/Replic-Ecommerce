@@ -1,9 +1,12 @@
+import OrderListHeader from "./OrderListHeader";
+import OrderListTable from "./OrderListTable";
 
 const OrderList = () => {
     return (
-        <div>
-            this is products
-        </div>
+        <>
+            <OrderListHeader />
+            <OrderListTable />
+        </>
     );
 };
 

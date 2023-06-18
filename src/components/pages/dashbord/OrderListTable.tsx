@@ -1,6 +1,7 @@
 import { RiDeleteBinLine, RiEditBoxLine } from "react-icons/ri";
+import CompleteCondition from "./CompleteCondition";
 
-const CustomersTable = () => {
+const OrderListTable = () => {
     return (
         <>
             <table className="w-full whitespace-nowrap text-gray">
@@ -15,12 +16,12 @@ const CustomersTable = () => {
                             Serial
                         </th>
                         <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-12">
-                            {/* Email */}
-                            Email
-                        </th>
-                        <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-12">
                             {/* Location */}
                             Join Date/Time
+                        </th>
+                        <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-12">
+                            {/* Email */}
+                            Order Condition
                         </th>
                         <th className="text-start bg-gray-5 text-secondary-text font-semibold text-sm pl-20">
                             {/* Last Activity */}
@@ -53,12 +54,11 @@ const CustomersTable = () => {
                                 </div>
                             </td>
                             <td className="pl-12 text-sm font-normal">
-                                <span className="flex items-center gap-1">
-                                    rjmahabub543@gmail.com
-                                </span>
+                                <span className="">18-04-2023 10:02 PM</span>
                             </td>
                             <td className="pl-12 text-sm font-normal">
-                                <span className="">18-04-2023 10:02 PM</span>
+                                {/* <PendingCondition /> */}
+                                <CompleteCondition />
                             </td>
                             <td className="pl-20 text-sm font-normal">
                                 <div
@@ -80,4 +80,4 @@ const CustomersTable = () => {
     );
 };
 
-export default CustomersTable;
+export default OrderListTable;
