@@ -32,7 +32,7 @@ const DashbordLayout = () => {
                     </ul>
                 </aside>
                 <main
-                    className='col-span-9 px-2 pb-1 border border-gray/40 bg-white rounded-lg h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
+                    className='col-span-9 box-area h-[calc(100vh-5.5rem)] overflow-y-auto scroll-none'
                 >
                     <Outlet />
                 </main>

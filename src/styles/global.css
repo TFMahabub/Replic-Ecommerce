@@ -41,7 +41,7 @@ body {
   @apply flex justify-center;
 }
 .box-area {
-  @apply p-2 border border-gray bg-white;
+  @apply p-4 border border-gray/40 bg-white rounded-lg;
 }
 
 /* spesific-tag-class */
