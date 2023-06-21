@@ -12,7 +12,7 @@ const ProductSection = () => {
                     Order Now
                 </TextSectionMenu>
                 <Link
-                    to={'/'}
+                    to={'/products'}
                 >
                     <span
                         className="text-lg hover:text-primary duration-common underline text-textColor"
@@ -20,10 +20,10 @@ const ProductSection = () => {
                 </Link>
             </div>
             <div
-                className="flex flex-wrap gap-10"
+                className="flex justify-center flex-wrap gap-4"
             >
                 {
-                    [...Array(10)].map((_, i) => <ProductCart key={i} />)
+                    [...Array(6)].map((_, i) => <ProductCart key={i} />)
                 }
             </div>
         </>

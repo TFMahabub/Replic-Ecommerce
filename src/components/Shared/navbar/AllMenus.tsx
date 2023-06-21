@@ -23,6 +23,14 @@ const AllMenus = ({ user }: { user: boolean }) => {
                             Log In
                         </TextNavMenu>
                     </Link>
+                    <Link
+                        to={"/dashbord"}
+                        className=''
+                    >
+                        <TextNavMenu>
+                            Dashbord
+                        </TextNavMenu>
+                    </Link>
                 </>
             }
         </>
