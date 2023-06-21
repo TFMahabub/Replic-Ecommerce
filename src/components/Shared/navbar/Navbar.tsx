@@ -1,4 +1,4 @@
-import { RiCloseFill, RiMenuFill } from 'react-icons/ri';
+import { RiCloseFill, RiMenuFill, RiShoppingCart2Line } from 'react-icons/ri';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 import { RootState } from "../../../app/store";
@@ -42,11 +42,23 @@ const Navbar = () => {
                     </div>
                     {/* -----------common-menus----------- */}
                     <div
-                        className='hidden lg:flex lg:gap-common'
+                        className='hidden lg:flex lg:items-center lg:gap-common'
                     >
                         <AllMenus
                             user={user}
                         />
+                        <span
+                            className='relative'
+                        >
+                            <RiShoppingCart2Line
+                                className="text-2xl text-white"
+                            />
+                            <small
+                                className='flex-center absolute -top-2 -right-2 h-4 w-4 bg-secondary rounded-full '
+                            >
+                                {2}
+                            </small>
+                        </span>
                     </div>
                 </div>
             </div>
