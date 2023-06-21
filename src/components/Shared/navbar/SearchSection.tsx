@@ -1,11 +1,14 @@
 import { RiSearchLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 const SearchSection = () => {
+    const navigate = useNavigate();
     return (
         <form
             className="overflow-hidden rounded-full relative"
         >
             <input
+                onFocus={() => navigate('/products')}
                 type="text"
                 name=""
                 id=""
