@@ -2,6 +2,8 @@ import { BiCartAdd } from 'react-icons/bi';
 import { useDispatch } from 'react-redux';
 import { ProductType } from '../../TypeInterfaces/ProductType';
 import { increateCartProduct } from '../../feauters/navbar/navbarSlice';
+import TextDescription from '../../utils/ReUseCom/TextDescription';
+import TextSectionMenu from '../../utils/ReUseCom/TextSectionMenu';
 
 const ProductCart = ({ product }: { product: ProductType }) => {
     const dispatch = useDispatch()
@@ -13,10 +15,26 @@ const ProductCart = ({ product }: { product: ProductType }) => {
             <img src="https://source.unsplash.com/random/300x300/?2" alt="" className="object-cover object-center w-full rounded-t-md h-52 dark:bg-gray-500" />
             <div className="flex flex-col justify-between p-6 space-y-common">
                 <div className="space-y-2">
-                    <h2 className="text-3xl font-semibold tracki ">{name}</h2>
+                    <TextSectionMenu>
+                        {name}
+                    </TextSectionMenu>
                     <p className="text-textColor">
                         {description}
                     </p>
+                    <div
+                        className='flex items-center gap-1'
+                    >
+                        <span
+                            className='text-primary '
+                        >
+                            &#2547;
+                        </span>
+                        <TextDescription
+                            varient='black'
+                        >
+                            {price}
+                        </TextDescription>
+                    </div>
                 </div>
                 <div
                     className="flex items-center gap-common"

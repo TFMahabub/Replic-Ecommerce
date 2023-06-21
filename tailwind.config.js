@@ -6,6 +6,7 @@ export default {
       primary: '#149777',
       secondary: '#FFC800',
       textColor: '#707676',
+      headingTextColor: '#2c2c2c',
       white: '#fff',
       gray:'#707676',
       lightGray: '#f1f1f1',

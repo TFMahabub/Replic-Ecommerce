@@ -6,7 +6,7 @@ const TextDescription = ({ children, varient }: { children: React.ReactNode, var
             {
                 varient === 'black' &&
                 <p
-                    className={`text-base font-light tracking-wide`}
+                    className={`text-base font-normal tracking-wide text-textColor`}
                 >
                     {children}
                 </p>
