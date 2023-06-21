@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { ProductType } from "../../../TypeInterfaces/ProductType";
+import ProductData from '../../../data/Products.json';
 import TextSectionMenu from "../../../utils/ReUseCom/TextSectionMenu";
 import ProductCart from "../../Cart/ProductCart";
 
@@ -23,7 +25,10 @@ const ProductSection = () => {
                 className="flex justify-center flex-wrap gap-4"
             >
                 {
-                    [...Array(6)].map((_, i) => <ProductCart key={i} />)
+                    ProductData?.slice(0, 6)?.map((item: ProductType) => <ProductCart
+                        key={item?.id}
+                        product={item}
+                    />)
                 }
             </div>
         </>

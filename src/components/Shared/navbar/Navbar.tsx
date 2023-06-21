@@ -7,7 +7,7 @@ import AllMenus from './AllMenus';
 import SearchSection from './SearchSection';
 
 const Navbar = () => {
-    const { hamburgerMenu } = useSelector((state: RootState) => state.navbar)
+    const { hamburgerMenu, cartProducts } = useSelector((state: RootState) => state.navbar)
     const dispatch = useDispatch()
 
     const user = false;
@@ -46,6 +46,7 @@ const Navbar = () => {
                     >
                         <AllMenus
                             user={user}
+                            cartProducts={cartProducts}
                         />
 
                     </div>
@@ -56,6 +57,7 @@ const Navbar = () => {
             >
                 <AllMenus
                     user={user}
+                    cartProducts={cartProducts}
                 />
             </div>
         </div>

@@ -1,3 +1,4 @@
+import ProductData from '../../../data/Products.json';
 import TextSectionMenu from '../../../utils/ReUseCom/TextSectionMenu';
 import ProductCart from '../../Cart/ProductCart';
 
@@ -18,7 +19,10 @@ const AllProducts = () => {
                 className="mt-partGap flex justify-center flex-wrap gap-4"
             >
                 {
-                    [...Array(21)].map((_, i) => <ProductCart key={i} />)
+                    ProductData?.map((item) => <ProductCart
+                        key={item?.id}
+                        product={item}
+                    />)
                 }
             </div>
         </section>
