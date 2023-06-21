@@ -10,7 +10,7 @@ const InputForm = () => {
                 <label htmlFor="password" className="block ">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md    focus:border-primary border-gray/30 border outline-none ring-0" />
                 <div className="flex justify-end text-xs ">
-                    <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                    <a href="#">Forgot Password?</a>
                 </div>
             </div>
             <button className="block w-full p-3 text-center rounded-md text-white  bg-primary active:scale-90 duration-common">Sign in</button>

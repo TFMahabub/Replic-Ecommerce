@@ -18,13 +18,18 @@ const Login = () => {
                 <div className="flex justify-center space-x-4">
                     <SocialMediaIcons />
                 </div>
-                <Link
-                    to={'/register'}
-                    className="text-xs text-center sm:px-6 ">Don't have an account?
-                    <a rel="noopener noreferrer" href="#" className="underline ">Sign up</a>
-                </Link>
+                <span
+                    className="text-xs text-center sm:px-6 "
+                >
+                    Don't have an account?
+                    <Link
+                        to={'/register'}
+                    >
+                        Sign up
+                    </Link>
+                </span>
             </div>
-        </section>
+        </section >
     );
 };
 
