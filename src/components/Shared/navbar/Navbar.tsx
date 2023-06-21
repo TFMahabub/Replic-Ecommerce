@@ -9,6 +9,8 @@ import SearchSection from './SearchSection';
 const Navbar = () => {
     const { hamburgerMenu, cartProducts } = useSelector((state: RootState) => state.navbar)
     const dispatch = useDispatch()
+    // console.log(cartProducts);
+
 
     const user = false;
     return (

@@ -6,7 +6,7 @@ import { increateCartProduct } from '../../feauters/navbar/navbarSlice';
 const ProductCart = ({ product }: { product: ProductType }) => {
     const dispatch = useDispatch()
     const { name, price, description } = product;
-    console.log(product);
+    // console.log(product.id);
 
     return (
         <div className="rounded-md shadow-md bg-white grow shrink basis-1/1 md:basis-[45%] lg:basis-[32%]">
@@ -25,7 +25,7 @@ const ProductCart = ({ product }: { product: ProductType }) => {
                         Read more
                     </button>
                     <button
-                        onClick={() => dispatch(increateCartProduct(product))}
+                        onClick={() => dispatch(increateCartProduct(product?.id))}
                         type="button"
                         className="flex-center h-12 w-full lg:w-[20%] bg-primary text-white rounded-lg uppercase active:scale-90 duration-common">
                         <BiCartAdd

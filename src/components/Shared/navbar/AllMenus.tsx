@@ -1,8 +1,9 @@
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import { CartProduct } from '../../../feauters/navbar/navbarSlice';
 import TextNavMenu from '../../../utils/ReUseCom/TextNavMenu';
 
-const AllMenus = ({ user, cartProducts }: { user: boolean, cartProducts: any }) => {
+const AllMenus = ({ user, cartProducts }: { user: boolean, cartProducts: CartProduct[] }) => {
     return (
         <>
             {

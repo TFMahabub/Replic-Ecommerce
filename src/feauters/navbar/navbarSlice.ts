@@ -1,16 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface Product {
-  id: string;
-  name: string;
-  price: string;
-  description: string;
+export interface CartProduct {
+  id: number;
+  quantity: number;
 }
-
 interface InitialState {
   hamburgerMenu: boolean;
   profileMenu: boolean;
-  cartProducts: any;
+  cartProducts: CartProduct[];
 }
 
 const initialState: InitialState = {
@@ -31,9 +28,25 @@ const navbarSlice = createSlice({
     },
     increateCartProduct: (state, { payload }) => {
       if (state.cartProducts.length === 0) {
-        state.cartProducts = [payload];
+        state.cartProducts = [
+          {
+            id: payload,
+            quantity: 1,
+          },
+        ];
       } else {
-        state.cartProducts.push(payload);
+        const isHave = state.cartProducts.find(
+          (item: CartProduct) => item?.id === payload
+        );
+
+        if (isHave) {
+          isHave.quantity++;
+        } else {
+          state.cartProducts.push({
+            id: payload,
+            quantity: 1,
+          });
+        }
       }
     },
   },
