@@ -1,3 +1,4 @@
+import { BiCartAdd } from 'react-icons/bi';
 
 const ProductCart = () => {
     return (
@@ -10,7 +11,18 @@ const ProductCart = () => {
                         Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.
                     </p>
                 </div>
-                <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md bg-primary text-white active:scale-90 duration-common">Read more</button>
+                <div
+                    className="flex items-center gap-common"
+                >
+                    <button type="button" className="flex-center h-12 w-full lg:w-[80%] bg-primary text-white rounded-lg uppercase active:scale-90 duration-common">
+                        Read more
+                    </button>
+                    <button type="button" className="flex-center h-12 w-full lg:w-[20%] bg-primary text-white rounded-lg uppercase active:scale-90 duration-common">
+                        <BiCartAdd
+                            className="text-3xl"
+                        />
+                    </button>
+                </div>
             </div>
         </div>
     );
