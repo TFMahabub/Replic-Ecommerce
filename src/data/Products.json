@@ -19,44 +19,44 @@
   },
   {
     "id": 4,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "27 que monitor",
+    "price": "17000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 5,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "locial keyboard",
+    "price": "5000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 6,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "Gammax mouse",
+    "price": "1500",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 7,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "Dell laptop 22ql",
+    "price": "21000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 8,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "Asuss laptop 23",
+    "price": "31000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 9,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "HP laptop 24.2",
+    "price": "21000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 10,
-    "name": "22fw Hp monitor",
-    "price": "11000",
+    "name": "IQ Ben",
+    "price": "12000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   }
 ]

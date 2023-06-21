@@ -44,7 +44,7 @@ const AllMenus = ({ user, cartProducts }: { user: boolean, cartProducts: CartPro
                                 className="text-2xl text-white"
                             />
                             <small
-                                className='flex-center absolute -top-2 -right-2 h-4 w-4 bg-secondary rounded-full '
+                                className='flex-center absolute -top-2 -right-2 h-4 w-4 bg-secondary rounded-full'
                             >
                                 {cartProducts.length}
                             </small>

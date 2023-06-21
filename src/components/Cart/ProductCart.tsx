@@ -15,7 +15,9 @@ const ProductCart = ({ product }: { product: ProductType }) => {
             <img src="https://source.unsplash.com/random/300x300/?2" alt="" className="object-cover object-center w-full rounded-t-md h-52 dark:bg-gray-500" />
             <div className="flex flex-col justify-between p-6 space-y-common">
                 <div className="space-y-2">
-                    <TextSectionMenu>
+                    <TextSectionMenu
+                        moreClass="line-clamp-2"
+                    >
                         {name}
                     </TextSectionMenu>
                     <p className="text-textColor">

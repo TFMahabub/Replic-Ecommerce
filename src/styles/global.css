@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .primary-btn {
+    @apply h-10 w-40 flex-center rounded-lg text-white bg-primary active:scale-90 duration-common;
+  }
+  .bgPrimary {
+    @apply bg-primary;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

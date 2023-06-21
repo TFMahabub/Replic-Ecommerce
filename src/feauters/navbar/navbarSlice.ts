@@ -49,11 +49,20 @@ const navbarSlice = createSlice({
         }
       }
     },
+    decreaseCartProduct: (state, { payload }) => {
+      state.cartProducts = state.cartProducts.filter(
+        (item) => item.id !== payload
+      );
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setHamburgerMenu, setProfileMenu, increateCartProduct } =
-  navbarSlice.actions;
+export const {
+  setHamburgerMenu,
+  setProfileMenu,
+  increateCartProduct,
+  decreaseCartProduct,
+} = navbarSlice.actions;
 
 export default navbarSlice.reducer;

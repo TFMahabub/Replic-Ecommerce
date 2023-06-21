@@ -1,46 +1,43 @@
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
+import { CartProduct } from "../../../feauters/navbar/navbarSlice";
+import TextSectionMenu from "../../../utils/ReUseCom/TextSectionMenu";
+import ProductCartListView from "../../Cart/ProductCartListView";
 import CheckoutForm from "./CheckoutForm";
-import CheckoutProductCart from "./CheckoutProductCart";
 
 const Checkout = () => {
+    const { cartProducts } = useSelector((state: RootState) => state.navbar)
     return (
         <section
-            className="container"
+            className="container lg:flex"
         >
-            <h1 className="sr-only">Checkout</h1>
-
-            <div className="mx-auto grid max-w-screen-2xl grid-cols-1 md:grid-cols-2">
-                <div className="bg-gray-50 py-12 md:py-24">
-                    <div className="mx-auto max-w-lg space-y-8 px-4 lg:px-8">
-                        <div className="flex items-center gap-4">
-                            <span className="h-10 w-10 rounded-full bg-blue-700"></span>
-
-                            <h2 className="text-xl font-medium text-textColor">Your all product</h2>
-                        </div>
-
-                        <div>
-                            <p className="text-2xl font-medium tracking-tight text-textColor">
-                                $99.99
-                            </p>
-
-                            <p className="mt-1 text-sm text-textColor">For the purchase of</p>
-                        </div>
-
-                        <div>
-                            <div className="flow-root">
-                                <ul className="-my-4 divide-y divide-gray/50">
-                                    <CheckoutProductCart />
-                                    <CheckoutProductCart />
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div
+                className="mt-sectionGap flex-1 headerHeight w-full"
+            >
+                <TextSectionMenu>
+                    Your All Products
+                </TextSectionMenu>
+                <div
+                    className="mt-6 space-y-common h-[80%] max-w-[26rem] overflow-y-auto"
+                >
+                    {
+                        cartProducts &&
+                        cartProducts?.map((item: CartProduct) => <ProductCartListView
+                            key={item?.id}
+                            product={item}
+                        />)
+                    }
                 </div>
-
-                <div className="bg-white py-12 md:py-24">
-                    <div className="mx-auto max-w-lg px-4 lg:px-8">
-                        <CheckoutForm />
-                    </div>
-                </div>
+            </div>
+            <div
+                className="pt-sectionGap flex-1 headerHeight bg-white w-full"
+            >
+                <h4
+                    className="text-center text-xl text-textColor font-medium"
+                >
+                    Please submit you Information
+                </h4>
+                <CheckoutForm />
             </div>
         </section>
     );

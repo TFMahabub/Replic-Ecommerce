@@ -22,7 +22,7 @@ const ProductSection = () => {
                 </Link>
             </div>
             <div
-                className="flex justify-center flex-wrap gap-4"
+                className="flex flex-wrap gap-4"
             >
                 {
                     ProductData?.slice(0, 6)?.map((item: ProductType) => <ProductCart

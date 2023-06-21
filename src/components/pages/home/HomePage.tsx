@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <>
             <header
-                className="headerHeight bg-[url('https://pixabay.com/get/g907abd5ffb85f076eda52d5d2cc8cedbf439b65a1dfb06742a47cc6dcbd6966fbc88bf2e63c1c74c705193386c125665314d441c26160e83df975016e32e9308_1280.jpg')] bg-cover relative"
+                className={`headerHeight bg-[url('https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center relative`}
             >
                 <div
                     className="bg-[#000]/70 absolute inset-0 flex-center"
