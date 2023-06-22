@@ -7,15 +7,15 @@ import { CartProduct, decreaseCartProduct } from "../../feauters/navbar/navbarSl
 const ProductCartListView = ({ product }: { product: CartProduct }) => {
     const dispatch = useDispatch()
 
+    //find product by id-
     const findProduct = ProductData?.find((item: ProductType) => item?.id === product?.id);
-    // const { id, name, price } = findProduct;
     return (
         <div className="rounded-md shadow-md bg-white grow shrink basis-1/1 md:basis-[45%] lg:basis-[32%] flex max-w-sm max-h-24 p-2 relative">
-            <img src="https://source.unsplash.com/random/300x300/?2" alt="" className="object-cover object-center rounded-md w-24 dark:bg-gray-500" />
+            <img src={findProduct?.image} alt="" className="object-cover object-center rounded-md w-24 dark:bg-gray-500" />
             <div className="flex flex-col px-4 pt-1">
                 <div className="space-y-1">
                     <p
-                        className="text-md text-headingTextColor font-medium tracking-wide"
+                        className="text-md text-headingTextColor font-medium tracking-wide line-clamp-1"
                     >
                         {findProduct?.name}
                     </p>

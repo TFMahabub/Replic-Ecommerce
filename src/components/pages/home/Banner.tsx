@@ -19,6 +19,7 @@ const Banner = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi.
             </TextDescription>
             <PrimaryButton
+                variant="small"
                 onClick={() => navigate('/login')}
             >
                 Geting Start

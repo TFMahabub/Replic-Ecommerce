@@ -1,13 +1,33 @@
 
-const PrimaryButton = ({ children, ...attributes }: { children: React.ReactNode, onClick?: () => void }) => {
+interface Propstype {
+    children: React.ReactNode,
+    onClick?: () => void,
+    variant: string,
+    type?: string
+}
+
+const PrimaryButton = ({ children, variant, type, ...attributes }: Propstype) => {
     return (
-        <button
-            {...attributes}
-            type='button'
-            className="primary-btn"
-        >
-            {children}
-        </button>
+        <>
+            {
+                variant === 'small' &&
+                <button
+                    {...attributes}
+                    className="primary-btn"
+                >
+                    {children}
+                </button>
+            }
+            {
+                variant === 'big' &&
+                <button
+                    {...attributes}
+                    className="primary-btn-big"
+                >
+                    {children}
+                </button>
+            }
+        </>
     );
 };
 

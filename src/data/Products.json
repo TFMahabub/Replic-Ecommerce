@@ -1,60 +1,70 @@
 [
   {
     "id": 1,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "22fw Hp monitor",
     "price": "11000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 2,
-    "name": "Xomi 24 inch monitor",
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/xiaomi/redmi-display-1a/redmi-display-1a-1-500x500.jpg",
+    "name": "Xiaomi Redmi 1A 23.8' Monitor",
     "price": "10000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 3,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "22 inch dell monitor",
     "price": "12000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 4,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "27 que monitor",
     "price": "17000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 5,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "locial keyboard",
     "price": "5000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 6,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "Gammax mouse",
     "price": "1500",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 7,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "Dell laptop 22ql",
     "price": "21000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 8,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "Asuss laptop 23",
     "price": "31000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 9,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "HP laptop 24.2",
     "price": "21000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."
   },
   {
     "id": 10,
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/22fw/22fw-main-500x500.jpg",
     "name": "IQ Ben",
     "price": "12000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat commodi animi impedit ratione quam quaerat, aut ad totam sequi."

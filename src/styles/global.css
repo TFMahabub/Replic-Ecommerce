@@ -8,8 +8,14 @@
   .primary-btn {
     @apply h-10 w-40 flex-center rounded-lg text-white bg-primary active:scale-90 duration-common;
   }
+  .primary-btn-big {
+    @apply h-10 w-full flex-center rounded-lg text-white bg-primary active:scale-95 duration-common;
+  }
   .bgPrimary {
     @apply bg-primary;
+  }
+  .input-default {
+    @apply px-6 py-[6px] border border-gray/40;
   }
 }
 

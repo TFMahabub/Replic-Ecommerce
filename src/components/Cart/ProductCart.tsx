@@ -7,20 +7,20 @@ import TextSectionMenu from '../../utils/ReUseCom/TextSectionMenu';
 
 const ProductCart = ({ product }: { product: ProductType }) => {
     const dispatch = useDispatch()
-    const { name, price, description } = product;
+    const { name, price, description, image } = product;
     // console.log(product.id);
 
     return (
         <div className="rounded-md shadow-md bg-white grow shrink basis-1/1 md:basis-[45%] lg:basis-[32%]">
-            <img src="https://source.unsplash.com/random/300x300/?2" alt="" className="object-cover object-center w-full rounded-t-md h-52 dark:bg-gray-500" />
-            <div className="flex flex-col justify-between p-6 space-y-common">
+            <img src={image} alt="" className="object-cover object-center w-full rounded-t-md h-52 dark:bg-gray-500" />
+            <div className="flex flex-col justify-between p-6 space-y-common over">
                 <div className="space-y-2">
                     <TextSectionMenu
-                        moreClass="line-clamp-2"
+                        moreClass=""
                     >
                         {name}
                     </TextSectionMenu>
-                    <p className="text-textColor">
+                    <p className="text-textColor line-clamp-3">
                         {description}
                     </p>
                     <div
