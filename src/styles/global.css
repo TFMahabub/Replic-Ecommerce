@@ -58,6 +58,17 @@ body {
 .box-area {
   @apply p-4 border border-gray/40 bg-white rounded-lg;
 }
+.Heading-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  display: -moz-box;
+  -moz-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* spesific-tag-class */
 .navbar-search {

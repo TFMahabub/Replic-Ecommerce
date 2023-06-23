@@ -16,7 +16,7 @@ const ProductCart = ({ product }: { product: ProductType }) => {
             <div className="flex flex-col justify-between p-6 space-y-common over">
                 <div className="space-y-2">
                     <TextSectionMenu
-                        moreClass=""
+                        moreClass="Heading-clamp"
                     >
                         {name}
                     </TextSectionMenu>
